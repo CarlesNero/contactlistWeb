@@ -1,0 +1,30 @@
+<main>
+  <h2>@if(contact){ Editar}@else { Nuevo } Contacto</h2>
+  @if (form) {
+  <form [formGroup]="form" (ngSubmit)="save()">
+    <input
+      type="text"
+      placeholder="Nombre"
+      formControlName="name"
+      required=""
+    />
+    <input
+      type="text"
+      placeholder="Email"
+      formControlName="email"
+      required=""
+    />
+    <input
+      type="number"
+      placeholder="Teléfono"
+      formControlName="phone"
+      required=""
+    />
+
+    <div class="buttons">
+      <button class="cancel" type="button" routerLink="/">Cancelar</button>
+      <button>@if(contact){ Editar}@else {Crear} contacto</button>
+    </div>
+  </form>
+  }
+</main>

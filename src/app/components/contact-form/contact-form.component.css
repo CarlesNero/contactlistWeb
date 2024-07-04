@@ -13,22 +13,8 @@ main {
   gap: 1rem;
 }
 
-td {
-  height: 40px;
-  padding: 0 2rem;
-  border-bottom: 2px solid rgb(252, 246, 246);
-}
-
 h2 {
   text-align: center;
-}
-
-table {
-  background-color: rgba(162, 175, 185, 0.233);
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 3px 3px 10px rgba(86, 125, 155, 0.596);
-  min-width: 800px;
 }
 
 .buttons {
@@ -49,4 +35,21 @@ button {
 button:hover {
   background-color: rgb(84, 148, 201);
   box-shadow: 1px 1px 3px rgba(37, 103, 112, 0.719);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+input{
+  padding: .5rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.cancel{
+  background-color: rgb(187, 187, 187);
 }

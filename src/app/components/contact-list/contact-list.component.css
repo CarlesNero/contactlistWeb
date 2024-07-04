@@ -24,11 +24,10 @@ h2 {
 }
 
 table {
-  background-color: rgba(162, 175, 185, 0.233);
   padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 3px 3px 10px rgba(86, 125, 155, 0.596);
-  min-width: 800px;
+  min-width: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
 .buttons {
@@ -41,7 +40,6 @@ button {
   border: 0;
   border-radius: 0.2rem;
   background-color: bisque;
-  margin-top: 1rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -49,4 +47,21 @@ button {
 button:hover {
   background-color: rgb(84, 148, 201);
   box-shadow: 1px 1px 3px rgba(37, 103, 112, 0.719);
+}
+
+.edit {
+  padding: 0.3rem;
+  margin: 0;
+  background-color: aquamarine;
+}
+.delete {
+  padding: 0.3rem;
+  background-color: rgb(156, 1, 1);
+  color: white;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
